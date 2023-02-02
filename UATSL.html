@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Anthony Marquez CSC102 The line below is a tab title-->
     <title>UAT Space</title>
+    <script src="code.js">
+
+
+
+    </script>
 </head>
 <body>
     <img src="UATSL.jpg" alt="Uat Space Logo">
@@ -14,98 +19,18 @@
     <h1>UAT Space</h1>
     <!--This is a paragraph. p means paragraph-->
     <p>This is a test for the paragraph section :):):):)</p>
-    <!--this is the code for the botton, the value is the text on the button, the alert is a pop-up.-->
+    <!--this is the code for the botton, the value is the text on the button, the alert is a pop-up when clicked.-->
     <input type="button" value="Click Me" onclick="alert('you clicked me');">
     <p> 
     Countdown: <span id = "countdown"></span>    
     </p>
     
     <script>
-        var currentTime = 50;
-        var timeout = 0;
-        var timeoutIncrement = 5000; 
+         
 
         var countdownElem = document.getElementById("countdown")
         //This is a timeout function, counts down by five each time and changes the "innerHTML". Which is the text on the website.
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            countdownElem.innerHTML = currentTime;
-            currentTime = currentTime - 5;
-
-
-        }, timeout);
-        timeout=timeout+ timeoutIncrement;
-        setTimeout(function(){
-            alert("Blastoff!");
-            countdownElem.innerHTML = 'launch successful';
-            
-
-
-        }, timeout);
-        
+       runTimer(countdownElem);
     </script>
 </body>
 
