@@ -22,7 +22,7 @@ function runTimer(){
                 countdownElem.innerHTML = 'launch successful';
                 }
                 // Displays a message when at the halfway mark
-                else if(currentTime<25){
+                else if(currentTime>25){
     
                     countdownElem.innerHTML = "Warning less than 1/2 way to launch, time left = " + currentTime;
                 }
