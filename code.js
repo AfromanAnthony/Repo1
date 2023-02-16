@@ -2,7 +2,36 @@
 function startButtonClick(){}
 //an empty function for now
 function stopButtonClick(){}
+//This function will ask for the first name, last name, badge number
+//the names need to be less than 20 characters and the bagde number needs to be 3 characters ot less
+function getUserInput(){
+   //these variable get the name and adge to store it
+    var fullName = "";
+    var badgeNumber = "";
+    //prompts that ask for the name of the person 
+ do{
+    var firstName = prompt("Please Enter First Name (under 10 characters)");
+    var lastName = prompt("Please Enter Last Name (under 10 characters");
 
+    fullName = firstName + " " + lastName;
+
+    if(fullName.length > 20){
+        alert("Please enter a shorter name. Length was: " + fullName.length);
+    }
+ }
+ while(fullName > 20);
+
+do{
+    badgeNumber = prompt("Please enter your badge number (Less than 3 digits)");
+    if(badgeNumber > 999){
+        alert("Please enter a badge number with 3 digits max");
+    }
+}
+
+ while(badgeNumber > 999);
+
+ return fullName + " " + badgeNumber; 
+}
 // A function that holds the countdown from the spacepage script, makes things more simpler.
 function runTimer(){
         //gives the current time and tracks
@@ -22,7 +51,7 @@ function runTimer(){
                 countdownElem.innerHTML = 'launch successful';
                 }
                 // Displays a message when at the halfway mark
-                else if(currentTime>25){
+                else if(currentTime<25){
     
                     countdownElem.innerHTML = "Warning less than 1/2 way to launch, time left = " + currentTime;
                 }
