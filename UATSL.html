@@ -9,8 +9,12 @@
     <script src="code.js">
     
     </script>
-
+    <!-- This changes the font of the text using the style command--> 
     <style>
+        body{
+            background-color: cornflowerblue;
+            color: midnightblue;
+        }
         p{
             font-size: 14pt;
             
@@ -29,6 +33,7 @@
     <p>This is a test for the paragraph section :):):):)</p>
     <!--this is the code for the botton, the value is the text on the button, the alert is a pop-up when clicked.-->
     <input type="button" value="Click Me" onclick="alert('you clicked me');">
+    <!--This shows the name of the person as well as their badge number-->
     <p> 
     Welcome, <span id= "getUserInput"></span>
 
@@ -36,16 +41,15 @@
     <p>
     Countdown: <span id = "countdown"></span>    
     </p>
-    
+
+    <button type="button" onclick="startButtonClick();" id="btnStart">Start Countdown</button>
+    <button type="button" onclick="stopButtonClick();" id="btnstop" disabled="true">Stop Countdown</button>
     <script>
          
-
-        var userInfo = getUserInput();
-        document.getElementById("getUserInput").innerHTML = userInfo;
-
-        var countdownElem = document.getElementById("countdown")
-        //This is a timeout function, counts down by five each time and changes the "innerHTML". Which is the text on the website.
-       runTimer(countdownElem);
+        //This gets the information from getUserInput and gives the names that the person typed in.
+        //var userInfo = getUserInput();
+        //document.getElementById("getUserInput").innerHTML = userInfo;
+         
     </script>
 </body>
 
