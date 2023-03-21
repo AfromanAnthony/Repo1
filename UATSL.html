@@ -43,14 +43,19 @@
     </p>
 
     <button type="button" onclick="startButtonClick();" id="btnStart">Start Countdown</button>
-    <button type="button" onclick="stopButtonClick();" id="btnstop" disabled="true">Stop Countdown</button>
+    <button type="button" onclick="stopButtonClick();" id="btnStop" disabled="true">Stop Countdown</button>
     <script>
          
         //This gets the information from getUserInput and gives the names that the person typed in.
         //var userInfo = getUserInput();
         //document.getElementById("getUserInput").innerHTML = userInfo;
          
+         playSound("111-pokemon-recovery.mp3");
     </script>
+    <!--This is one of the ways to have audio in your website-->
+    <audio controls>
+        <source src="111-pokemon-recovery.mp3" type="audio/mpeg">
+    </controls>
 </body>
 
 </html>
