@@ -29,9 +29,58 @@
         var product = number1 * number2;
         return product; 
     }
+
+    function checkForNumber(checkThisNumber){
+        if(!Number.isInteger(checkThisNumber)){
+        alert("Please enter a number.")
+        return false;
+    }
+    //the user has entered a number and now they can exit the loop.
+    else{
+        
+        return true;
+
+    }
+    }
     //variables that help, num1 and num2 are the numbers that are put into the functions, total is the solution for adding, product is the solution for multiplying.
+    //this will put the user in loop until they add a number for number 1
+    var num1 = 0;
+    var num2 = 0;
+    var isValidInput = true; 
+    do{
+
     var num1 = parseInt(prompt("Enter number 1: "));
+
+    isValidInput = checkForNumber(num1);
+    //if the input is not a number, alert the user.
+    if(!Number.isInteger(num1)){
+        alert("Please enter a number.")
+        isValidInput = false;
+    }
+    //the user has entered a number and now they can exit the loop.
+    else{
+
+        isValidInput = true;
+
+    }
+
+}
+// this keep the loop going until the plerson enters a numberS
+ while(!isValidInput);
+do{
     var num2 = parseInt(prompt("Enter number 2: "));
+
+    isValidInput = checkForNumber(num1);
+     //if the input is not a number, alert the user.
+     if(!Number.isInteger(num2)){
+        alert("Please enter a number.")
+        isValidInput = false;
+     }
+     else{
+         isValidInput = true;
+     }
+}
+while(!isValidInput);
     var total = add_numbers(num1, num2);
     var product = multiply_numbers(num1, num2);
     //The alerts show the solutions to both problems.
@@ -51,7 +100,7 @@
     if(currentTime > 11){
         isLunchTime = true;
     }
-    //using a boolean function we check to see if IsLunchTime is true, if so it displays an alert.
+    //using a boolean function we check to see if IsLunchTime is true, if so it displays an alert.0
     if(isLunchTime == true){
         alert("It is lunch time!!")
     }

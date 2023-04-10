@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Data</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="dataLauncher.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>UAT Space Program Data</h1>
+    <img src="UAT_Space.jpg" width="200px">
+    <br>
+    The current time is: <span id="timestamp">Press start for the current time</span>
+    <br>
+    <button id="startButton" onclick="start();">Start</button>
+    <button id="stopButton" onclick="stop();">Stop</button>
+    <table id= "data">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds">
+                <td>Time elapsed</td>
+                <td>1210 seconds</td>
+            </tr>
+            <tr id="latitude">
+                <td>Latitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="longitude">
+                <td>Longitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="gpsSensor_alt">
+                <td>GPS Altitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="bmpSensor_alt">
+                <td>BMP Sensor Altitude</td>
+                <td>30383</td>
+            </tr>
+            <tr id="bmpSensor_pres">
+                <td>BMP Sensor Pressure</td>
+                <td>2.34</td>
+            </tr>
+            <tr id="bmpSensor_temp">
+                <td>BMP Sensor Temperature</td>
+                <td>0</td>
+            </tr>
+            <tr id="digSensor_temp">
+                <td>Digital Sensor Temperature</td>
+                <td>24</td>
+            </tr>
+            <tr id="cssSensor_temp">
+                <td>Css Sensor Temperature</td>
+                <td>32</td>
+            </tr>
+            <tr id="cssSensor_eC02">
+                <td>Css Sensor eC02</td>
+                <td>422</td>
+            </tr>
+            <tr id="cssSensor_TVOC">
+                <td>Css Sensor TVOC</td>
+                <td>3</td>
+            </tr>
+            <tr id="UV">
+                <td>UV</td>
+                <td>6</td>
+            </tr>
+            <tr id="accelx">
+                <td>Accel X</td>
+                <td>-0.75</td>
+            </tr>
+            <tr id="accely">
+                <td>Accel Y</td>
+                <td>-0.77</td>
+            </tr>
+            <tr id="accelz">
+                <td>Accel Z</td>
+                <td>9.35</td>
+            </tr>
+            <tr id="magneticX">
+                <td>Magnetic x</td>
+                <td>-0.08</td>
+            </tr>
+            <tr id="magneticY">
+                <td>Magnetic Y</td>
+                <td>0.36</td>
+            </tr>
+            <tr id="magneticZ">
+                <td>Magnetic Z</td>
+                <td>-0.53</td>
+            </tr>
+            <tr id="gyroX">
+                <td>Gryo X</td>
+                <td>4.44</td>
+            </tr>
+            <tr id="gyroY">
+                <td>Gryo Y</td>
+                <td>-0.95</td>
+            </tr>
+            <tr id="gyroZ">
+                <td>Gryo Z</td>
+                <td>1.72</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

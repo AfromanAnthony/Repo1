@@ -1,4 +1,18 @@
 var arrInterval = new Array();
+//The function to make the audio work on the website.
+function playSound(soundSrc){
+    var sound = document.createElement("audio");
+    sound.src = soundSrc
+    sound.setAttribute("controls", "auto");
+    document.body.appendChild(sound);
+    play = function(){
+        sound.play();
+    }
+    stop = function(){
+        sound.pause();
+    }
+}
+
 
 function startButtonClick(){
     //dont let the user click the start button while the countdown is running 
